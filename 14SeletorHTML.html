@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletor HTML</title>
+
+        <!--JS-->
+        <script>
+
+            //Cria a função ação:
+            function acao(){
+                //Captura o texto através da TAG e joga na variável:
+                var texto = document.getElementsByTagName("h1")[0];
+
+                //Exibe o conteúdo do h1 na posição selecionada, no caso 0:
+                alert(texto.innerHTML);
+                //O innerHTML, pega somente o texto que está na tag h1.
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Proway</h1>
+        <h1>Seletores JS</h1>
+        <h1>Curso Proway</h1>
+
+        <button onclick="acao()">Selecionar</button>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletor ID</title>
+
+        <!--JS-->
+        <script>
+            //Cria a função para exibir o conteúdo do campo:
+            function exibirConteudoDoCampo(){
+                //Captura o texto digitado no input:
+                var textoDigitado = document.getElementById("campo");
+
+                //Exibe o texto digitado:
+                alert(textoDigitado.value);
+                //Aqui utiliza-se o value, pois é um tag de formulário (input).
+
+                //Limpa o conteúdo do input:
+                textoDigitado.value = "";
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="text" id="campo">
+        <button onclick="exibirConteudoDoCampo()">Clique Aqui</button>
+    </body>
+</html>

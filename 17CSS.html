@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS</title>
+
+        <!--JS-->
+        <script>
+
+            //Cria a função de ação:
+            function acao(){
+                //Obter o elemento h1:
+                var texto = document.getElementsByTagName("h1")[0];
+
+                //CSS:
+                texto.style.color = "red";
+                texto.style.fontSize = "20px";
+
+                //Alterar o conteúdo do h1:
+                texto.innerHTML = "Curso de JavaScript";
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h1>JavaScript</h1>
+        <button onclick="acao()">Clique Aqui</button>
+    </body>
+</html>
